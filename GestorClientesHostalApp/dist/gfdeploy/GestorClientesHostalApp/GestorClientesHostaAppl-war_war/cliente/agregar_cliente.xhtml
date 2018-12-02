@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <ui:include src="/WEB-INF/templates/header.xhtml" />
+            <section>
+                <p:messages>
+                    <p:autoUpdate />
+                </p:messages>
+                <p:panel header="Ingresar Cliente">
+                    <h:panelGrid columns="4">
+                        <h:outputLabel value="Rut" />
+                        <p:inputText value="#{clientesManagedBean.rutTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar el rut"/>
+                        <h:outputLabel value="Nombre" />
+                        <p:inputText value="#{clientesManagedBean.nombreTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar el nombre"/>
+                        <h:outputLabel value="Apellido Paterno" />
+                        <p:inputText value="#{clientesManagedBean.ap_paternoTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar el apellido paterno"/>
+                        <h:outputLabel value="Apellido Materno" />
+                        <p:inputText value="#{clientesManagedBean.ap_maternoTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar el apellido materno"/>
+                        <h:outputLabel value="Mail" />
+                        <p:inputText value="#{clientesManagedBean.mailTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar el mail"/>
+                        <h:outputLabel value="Telefono" />
+                        <p:inputText value="#{clientesManagedBean.telefonoTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar el telefono"/>
+                        <h:outputLabel value="Pais" />
+                        <p:inputText value="#{clientesManagedBean.paisTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar el Pais"/>
+                        <h:outputLabel value="Ciudad" />
+                        <p:inputText value="#{clientesManagedBean.ciudadTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar la ciudad"/>
+                        <h:outputLabel value="Direccion" />
+                        <p:inputText value="#{clientesManagedBean.direccionTxt}" 
+                                     required="true" 
+                                     requiredMessage="Debe Ingresar la direccion"/>
+                        <p:commandButton value="Ingresar" 
+                                         actionListener="#{clientesManagedBean.agregarProducto}" />
+                    </h:panelGrid>
+                </p:panel>
+            </section>
+        </h:form>
+    </h:body>
+</html>
