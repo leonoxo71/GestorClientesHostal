@@ -5,7 +5,7 @@
  */
 package cl.usm.GestorClientesHostalApp.controllers;
 
-import cl.usm.GestoClientesHostalApp.dao.ClientesModelLocal;
+
 import java.io.Serializable;
 import javax.ejb.EJB;
 import javax.faces.event.ActionEvent;
@@ -20,8 +20,7 @@ import javax.faces.view.ViewScoped;
 @ViewScoped
 public class ClientesManagedBean implements Serializable{
 
-    @EJB
-    private ClientesModelLocal clientesModel;
+
         
 
     
