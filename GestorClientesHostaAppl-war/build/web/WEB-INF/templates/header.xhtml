@@ -6,11 +6,36 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
     
         <p:menubar>
-            <p:menuitem value="Home"  url="index.xhtml"/>
-            <p:menuitem value="Agregar Cliente" 
+            <p:menuitem value="Home" icon="pi pi-home" url="index.xhtml"/>
+            
+            <p:submenu label="Cliente" icon="pi pi-user">
+                <p:menuitem value="Agregar Cliente" 
                         url="cliente/agregar_cliente.xhtml" />
-            <p:menuitem value="Gestionar Cliente" 
+                <p:menuitem value="Gestionar Cliente" 
                         url="cliente/gestor_cliente.xhtml" />
+            </p:submenu>
+
+             <p:submenu label="Pais" icon="pi pi-globe">
+                 <p:menuitem value="Agregar Pais" 
+                        url="cliente/agregar_pais.xhtml" />
+                <p:menuitem value="Gestionar Pais" 
+                        url="cliente/gestor_pais.xhtml" />
+            </p:submenu>
+                 <i class="pi pi-home"></i>
+            <p:submenu label="Ciudad" icon="pi pi-globe">
+                 <p:menuitem value="Agregar Ciudad" 
+                        url="cliente/agregar_ciudad.xhtml" />
+                <p:menuitem value="Gestionar Ciudad" 
+                        url="cliente/gestor_ciudad.xhtml" />
+            </p:submenu>
+            
+            <p:submenu label="Usuario" icon="pi pi-users">
+                 <p:menuitem value="Agregar Usuario" 
+                        url="cliente/agregar_usuario.xhtml" />
+                <p:menuitem value="Gestionar Pais" 
+                        url="cliente/gestor_usuario.xhtml" />
+            </p:submenu>   
+            
         </p:menubar>
 
 </ui:composition>
